@@ -1,5 +1,6 @@
 # engine
 Engine - DB
+<<<<<<< HEAD
 
 목적: shodan copycat
 
@@ -14,3 +15,5 @@ Engine - DB
 
 2. 특정 http header(x-powered-by, server) 존재할 때, 해당 WAS 패턴에 대해서만 로그인 시도
    존재하지 않을 때, 모든 종류의 WAS 패턴 다 시도
+=======
+>>>>>>> 04e5b2fca977e30763b89804af62477e36edd622
