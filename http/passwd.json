@@ -1,0 +1,18 @@
+{	
+	"test" :{
+		"jin" : "sok891111"
+	},
+    "tomcat" : {
+		"admin" : "admin",
+		"administrator" : "administrator",
+		"passwd" : "passwd"
+	},
+	"jboss" : {
+		"repos" : "mingnewbie.tistory.com/repositories/release",
+		"userid" : "mingnewbie",
+		"passwd" : "5678"
+	},
+	"apache-coyote/1.1" :{
+		"jin" : "sok891111"
+	}
+}
