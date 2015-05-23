@@ -108,7 +108,7 @@ class Server:
 		self.response = response
 		self.pwlist = {}
 	def _access_server(self):
-
+		#Server Logic
 		server = self.response.retrieve_server_info()
 		servername = ""
 		if "tomcat" in server   :
