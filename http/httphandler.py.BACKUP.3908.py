@@ -25,6 +25,11 @@ class Response:
         return self._headers.get(name.lower())
 
 class Server:
+<<<<<<< HEAD
+    def __init__(self, res):
+        self.res = res
+=======
+
 	def __init__(self, request, response):
 		self.request = request
 		self.response = response
@@ -69,3 +74,4 @@ if __name__ == "__main__":
 	req.add_header({"t" :"a"})
 
 
+>>>>>>> 10a8b08ae3b81fba1ba1dc131178e131e71a8162
