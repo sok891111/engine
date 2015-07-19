@@ -16,6 +16,7 @@ def test(url):
         Http(url,8080)
     except Exception, why:
         print why 
+        
 
 jobs = [gevent.spawn(test, url) for url in urls]
 
