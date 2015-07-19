@@ -1,8 +1,8 @@
 """Spawn multiple workers and wait for them to complete"""
 # from __future__ import print_function
 import sys
-from httphandler import Response
-urls = [ 'https://www.slack.com','http://www.naver.com','http://www.daum.net']
+from httphandler import Http
+urls = [ 'http://192.168.0.10']
 
 import gevent
 from gevent import monkey
@@ -11,15 +11,12 @@ from gevent import monkey
 monkey.patch_all()
 from urllib2 import urlopen
 
-def print_head(url):
-    print 'Starting %s' % url
+def test(url):
     try:
-        res = Response(urlopen(url))
+        Http(url,8080)
     except Exception, why:
         print why 
-        return
-    print "%s %s"%(res.request_url,res.getheader("server")) 
 
-jobs = [gevent.spawn(print_head, url) for url in urls]
+jobs = [gevent.spawn(test, url) for url in urls]
 
 gevent.wait(jobs)
